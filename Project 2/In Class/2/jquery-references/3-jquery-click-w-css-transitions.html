@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Title</title>
+
+<!--This imports the jquery libary from Google -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--Jquery goes here-->
+<script>
+$(document).ready(function(){
+
+
+  $('.bigbox').on('click', function(){
+      $('.current').removeClass('current');
+      $(this).addClass('current');
+      $('.ghost').toggleClass('popout');
+  });
+
+
+});
+</script>
+
+<style>
+
+
+.bigbox {
+  width:200px;
+  height:200px;
+  float:left;
+  margin-top:20px;
+  margin-left:20px;
+  background-color:blue;
+                            transition: all 2s ease-in-out;
+        border-radius: 0px;
+        opacity: 100%
+}
+.current {
+    background-color:lightgreen;
+                              transition: all ws ease-in-out;
+    height:420px;
+      border-radius: 100px;
+}
+.popout {
+  opacity: .2;
+  transition: all .5s;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div id="menu">
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox ghost"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Title</title>
+
+<!--This imports the jquery libary from Google -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--Jquery goes here-->
+<script>
+
+$(document).ready(function(){
+
+  $('.bigbox').addClass('current');
+
+  $('.bigbox').on('click', function(){
+      $('.current').removeClass('current');
+      $(this).addClass('current');
+  });
+
+  $(".hello").click(function(){
+    setTimeout(function(){
+       $(".current").addClass("border-me");
+    }, 1500);
+  });
+
+  setTimeout(function() {
+       $('body').addClass('turngreen');
+  }, 2000);
+
+});
+
+
+</script>
+
+
+<style>
+
+.border-me {
+border: 10px solid black;
+opacity:.2;
+}
+
+.turngreen {
+background-color:#36b4a7;
+transition:2s;
+}
+
+.bigbox {
+  width:200px;
+  height:200px;
+  float:left;
+    margin-top:20px;
+  margin-left:20px;
+  background-color:red;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  border-radius: 0px;
+}
+.current {
+    background-color:#ffc7f3;
+    transition: all 1s ease-in-out;
+    width:420px;
+    border-radius: 100px;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div id="menu">
+    <div class="bigbox hello"></div>
+    <div class="bigbox hello"></div>
+    <div class="bigbox hello"></div>
+    <div class="bigbox hello"></div>
+    <div class="bigbox hello"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+    <div class="bigbox"></div>
+  </div>
+</body>
+</html>
