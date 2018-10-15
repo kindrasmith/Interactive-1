@@ -1,94 +1,298 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+  <meta name="description" content="The HTML5 Herald"/>
+  <meta name="author" content="SitePoint"/>
+  <link href="css/styles.css?v=1.0" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/class?family=Baloo+Baijaan" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+<style type="text/css">
+
+</style>
+
+<script>
+
+  // jquery range function
+   $(document).on('input', '#myRange', function() {
+     //console 1
+     console.log("slider 1s value is " + $(this).val());
+//header
+    $('.toph1').css("opacity", $(this).val()/100);
+  });
+
+
+   //jquery function] input2
+   $(document).on('input', '#myRange2', function() {
+     //console2
+     console.log("slider 2s value is" + $(this).val());
+     //use this to change the CSS of the headline's font size: experiment!
+     $('.toph1').css("font-size", $(this).val());
+
+   });
+
+   //jquery function] input3
+   $(document).on('input', '#myRange3', function() {
+     //console2
+     console.log("slider 3s value is" + $(this).val());
+     //use this to change the CSS of the headline's font size: experiment!
+     $('.toph1').css("color", $(this).val());
+   });
+
+
+
+</script>
 
 <style>
-  body{
-    margin:0;
-    padding:0;
-    background-color: lightblue;
-  }
 
-  .rectangle {
-    height: 50px;
-    width: 500px;
-    background-color: white;
-    position: absolute;
-    margin-left:33vw;
-    margin-top:25%;
-    }
-      .rectanglea {
-        height: 15px;
-        width: 470px;
-        background-color: lightgrey;
-        position: absolute;
-        margin-left:34vw;
-        margin-top:26.2%;
-        }
+          img{
+            width:200px;
+            float: right;
+            margin: 40px;
+            margin-bottom: 50px;
+          }
 
-
-    .rectangle2{
-      height: 50px;
-      width: 500px;
-      background-color: white;
-      position: absolute;
-      margin-left:33vw;
-      margin-top:33%;
-      }
-
-        .rectangle2a{
-          height: 15px;
-          width: 470px;
-          background-color: lightgrey;
-          position: absolute;
-          margin-left:34vw;
-          margin-top:34.2%;
+          video{
+            height: 400px;
+          width: 675px;
+          position:absolute;
+          border-radius: 20px;
+          margin-left: 400px;
+          margin-top: 2200px;
+          z-index: 1;
           }
 
 
+          div{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightpink;
+            background-image: url("phone.jpg");
+            background-size:cover;
+            background-position: center;
+            position: absolute;
+            margin-top: 800px;
+          }
 
-      .rectangle3{
-        height: 50px;
-        width: 500px;
-        background-color: white;
-        position: absolute;
-        margin-left:33vw;
-        margin-top:41%;
-        }
-
-  h1
-  {
-    position: absolute;
-    top: 25%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    margin: 0%;
-    padding: 0;
-    font-family:'Encode Sans Expanded', sans-serif;
-    color: black;
-    font-size: 150px;
-    text-shadow: 0 10px 15px rgba(0,0,0, .5)
+  body{
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to bottom right,#66004d, #e6005c,#ff8533,#ffff66);
+    height: 5000px;
   }
 
 
+
+
+    h1
+    {
+      position: absolute;
+      top: 25%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      margin: 0%;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      color: black;
+      font-size: 700px;
+      text-shadow: 0 13px 10px rgba(0,0,0, .75)
+    }
+
+    h2{
+      position: absolute;
+    margin-left: 45px;
+    margin-top: 350px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 45px;
+    text-shadow: 0 10px 10px rgba(0,0,0, .5)
+
+    }
+
+
+        h2{
+          position: absolute;
+        margin-left: 50px;
+        margin-top: 350px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: black;
+        font-size: 40px;
+        text-shadow: 0 10px 10px rgba(0,0,0, .5);
+
+
+
+        }
+
+    h3{
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 400px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: black;
+      font-size: 18px;
+      text-shadow: 0 10px 10px rgba(0,0,0, .5)
+    }
+    h4{
+          position: absolute;
+        margin-left: 50px;
+        margin-top: 2050px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: black;
+        font-size: 40px;
+        text-shadow: 0 10px 10px rgba(0,0,0, .5)
+
+      }
+
+      h5{
+        position: absolute;
+      margin-left:50px;
+      margin-top: 2100px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: black;
+      font-size: 18px;
+      text-shadow: 0 10px 10px rgba(0,0,0, .5)
+      }
+
+
+                    .slider {
+                      -webkit-appearance: none;
+                      width: 50%;
+                      height: 30px;
+                      background: yellow;
+                      outline: none;
+                      opacity: 0.7;
+                      -webkit-transition: .5s;
+                      transition: opacity .5s;
+
+                      margin-top: 350px;
+                      margin-left: 365px;
+                      background-image: linear-gradient(to top right,black,#66004d, #e6005c,#ff8533,#ffff66);
+
+                    }
+                    .slider2{
+                      background:#e60054;
+                      margin-top: 25px;
+                      background-image: linear-gradient(to bottom left,black,#66004d, #e6005c,#ff8533,#ffff66);
+
+
+                    }
+                    .slider3{
+                      ;
+                        margin-top: 25px;
+                        background-image: linear-gradient(to bottom right,black,#66004d, #e6005c,#ff8533,#ffff66);
+
+                    }
+
+                    .slider:hover {
+                      opacity: 1;
+                    }
+
+                    .slider::-webkit-slider-thumb {
+                      -webkit-appearance: none;
+                      appearance: none;
+                      width: 25px;
+                      height: 25px;
+                      background:black;
+                      cursor: crosshair;
+                      border-radius: 50%;
+                    }
+                    .slider::-moz-range-thumb {
+                      width:25px;
+                      height:25px;
+                      background: pink;
+                      cursor: crosshair;
+                      margin-top: 100px;
+                      border-radius: 50%;
+                    }
+
+                                            #box1{
+                                              height: 550px;
+                                              width: 260px;
+                                              background: black;
+                                              position: absolute;
+                                              border-radius: 30px;
+                                              margin-left: 590px;
+                                              margin-top: 460px;
+                                              opacity:1;
+                                                transition: 1s ease;
+                                            }
+                                            #box1:hover {
+                                              opacity:0;
+                                              }
+
+
+                                              h6{
+                                                position: absolute;
+                                                margin-top: 0px;
+                                                font-size: 40px;
+                                                color:#e6005c;
+
+                                              }
+                .computer{
+                  background-image: url("computer.jpg");
+                  margin-top: 2000px;
+                  position: absolute;
+                }
+
+                #box2{
+                  height: 400px;
+                  width: 675px;
+                  background: black;
+                  position:absolute;
+                  border-radius: 20px;
+                  margin-left: 400px;
+                  margin-top: 2200px;
+                  opacity:1;
+                    transition: 1s ease;
+                    z-index: 1;
+                }
+                #box2:hover {
+                  opacity:0;
+                  }
+
+            .music{
+              background-image: url("music.jpg");
+              margin-top: 1500px;
+              height: 50px;
+              width:50px;
+              position: absolute;
+            }
 </style>
 
 </head>
 
 <body>
 
-  <h1> SEEK BAR </h1>
-    <div class="rectangle"> </div>
-      <div class="rectanglea"> </div>
-    <div class="rectangle2"> </div>
-      <div class="rectangle2a"> </div>
-    <div class="rectangle3"> </div>
+
+  <h6>The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time.The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. The ability to look back into the past, see the future or be in the now, at any given time. </h6>
+
+
+<div class="phone"> </div>
+
+  <h1 class="toph1" style="font-size: 200px; font-family: sans-serif;opacity:0.51;"> SEEK BAR </h1>
+  <input class="slider" id="myRange" type="range" min="1" max="100" value="50" />
+  <input class="slider slider2" id="myRange2" type="range" min="1" max="100" value="50" />
+  <input class="slider slider3" id="myRange3" type="range" min="1" max="100" value="50" />
+
+
+
+    <h2>SEEK BAR</h2>
+    <h3>PHOTO GALLERY</h3>
+    <div id="box1"></div>
+
+    <div class="music"></div>
+
+  <div id="box2"></div>
+        <div class="computer"></div>
+        <h4>SEEK BAR</h4>
+        <h5>   VIDEO PLAYER </h5>
+
+
+
+
+
 </body>
 </html>
