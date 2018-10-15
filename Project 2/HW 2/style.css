@@ -1,0 +1,223 @@
+<style>
+
+          img{
+            width:200px;
+            float: right;
+            margin: 40px;
+            margin-bottom: 50px;
+          }
+
+          video{
+            height: 400px;
+          width: 675px;
+          position:absolute;
+          border-radius: 20px;
+          margin-left: 400px;
+          margin-top: 2200px;
+          z-index: 1;
+          }
+
+
+          div{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightpink;
+            background-image: url("phone.jpg");
+            background-size:cover;
+            background-position: center;
+            position: absolute;
+            margin-top: 800px;
+          }
+
+  body{
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to bottom right,#66004d, #e6005c,#ff8533,#ffff66);
+    height: 5300px;
+  }
+
+
+
+
+    h1
+    {
+      position: absolute;
+      top:-550px;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      margin: 0%;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      color: black;
+      font-size: 700px;
+      text-shadow: 0 13px 10px rgba(0,0,0, .75)
+    }
+
+    h2{
+      position:relative;
+    margin-left: 45px;
+    margin-top: 600px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 45px;
+    text-shadow: 0 10px 10px rgba(0,0,0, .5)
+
+    }
+
+
+
+        }
+
+    h3{
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 400px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: black;
+      font-size: 18px;
+      text-shadow: 0 10px 10px rgba(0,0,0, .5)
+    }
+    h4{
+          position: absolute;
+        margin-left: 50px;
+        margin-top: 2050px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: black;
+        font-size: 40px;
+        text-shadow: 0 10px 10px rgba(0,0,0, .5)
+
+      }
+
+      h5{
+        position: absolute;
+      margin-left:50px;
+      margin-top: 2100px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: black;
+      font-size: 18px;
+      text-shadow: 0 10px 10px rgba(0,0,0, .5)
+      }
+
+
+                    .slider {
+                      -webkit-appearance: none;
+                      width: 50%;
+                      height: 30px;
+                      background: yellow;
+                      outline: none;
+                      opacity: 0.7;
+                      -webkit-transition: .5s;
+                      transition: opacity .5s;
+                      margin-top: -375px;
+                      margin-left: 365px;
+                      background-image: linear-gradient(to top right,black,#66004d, #e6005c,#ff8533,#ffff66);
+
+                    }
+                    .slider2{
+                      background:#e60054;
+                      margin-top: 25px;
+                      background-image: linear-gradient(to bottom left,black,#66004d, #e6005c,#ff8533,#ffff66);
+                        margin-top: -300px;
+
+
+                    }
+                    .slider3{
+                      ;
+                        margin-top: 25px;
+                        background-image: linear-gradient(to bottom right,black,#66004d, #e6005c,#ff8533,#ffff66);
+                        margin-top: -225px;
+
+                    }
+
+                    .slider:hover {
+                      opacity: 1;
+                    }
+
+                    .slider::-webkit-slider-thumb {
+                      -webkit-appearance: none;
+                      appearance: none;
+                      width: 25px;
+                      height: 25px;
+                      background:black;
+                      cursor: crosshair;
+                      border-radius: 50%;
+                    }
+                    .slider::-moz-range-thumb {
+                      width:25px;
+                      height:25px;
+                      background: pink;
+                      cursor: crosshair;
+                      margin-top: 100px;
+                      border-radius: 50%;
+                    }
+
+                                            #box1{
+                                              height: 550px;
+                                              width: 260px;
+                                              background: black;
+                                              position: absolute;
+                                              border-radius: 30px;
+                                              margin-left: 590px;
+                                              margin-top: -2180px;
+                                              opacity:1;
+                                                transition: 1s ease;
+                                            }
+                                            #box1:hover {
+                                              opacity:0;
+                                              }
+
+
+                                              h6{
+                                                position: relative;
+                                                margin-top: -800px;
+                                                font-size: 40px;
+                                                color:#e6005c;
+
+                                              }
+                .computer{
+                  background-image: url("computer.jpg");
+                  margin-top: 2000px;
+                  position: absolute;
+                }
+
+                #box2{
+                  height: 400px;
+                  width: 675px;
+                  background: black;
+                  position:absolute;
+                  border-radius: 20px;
+                  margin-left: 400px;
+                  margin-top: 2200px;
+                  opacity:1;
+                    transition: 1s ease;
+                    z-index: 1;
+                }
+                #box2:hover {
+                  opacity:0;
+                  }
+
+
+
+            .section1{
+              position: relative;
+              width:100vw;
+              height:100vh;
+            }
+            .section2{
+              position: relative;
+              width:100vw;
+              height:100vh;
+              }
+            .section3{
+              position: relative;
+              width:100vw;
+              height:100vh;
+            }
+            .section4{
+              position: relative;
+              width:100vw;
+              height:1000px;
+
+            }
+</style>
